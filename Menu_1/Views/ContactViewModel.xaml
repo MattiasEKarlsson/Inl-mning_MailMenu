@@ -1,0 +1,24 @@
+﻿<UserControl xmlns:Controls="clr-namespace:Menu_1.Controls"  x:Class="Menu_1.Views.ContactViewModel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Menu_1.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <Label Content="Contacts" FontSize="24" FontFamily="Bahnschrift Light" Margin="20,30,10,90" FontWeight="Normal"/>
+            <Controls:ContactControl ContactImage="/Views/Matte.png" />
+            <Controls:ContactControl ContactName="Gustav Vasa" ContactTitle="King" ContactImage="/Views/Vasa.png" />
+            <Controls:ContactControl ContactName="Luke SkyWalker" ContactTitle="Jedi" ContactImage="/Views/luke.png" />
+            <Controls:ContactControl ContactName="Edmund Blackadder" ContactTitle="Royalty" ContactImage="/Views/Adder.jpg" />
+            <Controls:ContactControl ContactName="Darth Vader" ContactTitle="Sith Lord" ContactImage="/Views/Darth.jpeg" />
+        </StackPanel>
+    </Grid>
+</UserControl>

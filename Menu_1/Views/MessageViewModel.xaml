@@ -1,0 +1,54 @@
+﻿<UserControl xmlns:Controls="clr-namespace:Menu_1.Controls"  x:Class="Menu_1.Views.MessageViewModel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Menu_1.Views"
+             mc:Ignorable="d" 
+             
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <Label Content="Messages" FontSize="24" FontFamily="Bahnschrift Light" Margin="20,30,10,90" FontWeight="Normal"/>
+            <Controls:MessageControl x:Name="mess1" MouseDoubleClick="mess1_MouseDoubleClick" MessageFrom="From Contact Gustav Vasa" MessageAbout="Tjenare"/>
+            <Controls:MessageControl x:Name="mess2" MouseDoubleClick="mess2_MouseDoubleClick" MessageFrom="From Contact Mattias" MessageAbout="Tjena" />
+            <Controls:MessageControl x:Name="mess3" MouseDoubleClick="mess3_MouseDoubleClick" MessageAbout="Hej" MessageFrom="From Contact Sven" />
+            <Controls:MessageControl x:Name="mess4" MouseDoubleClick="mess4_MouseDoubleClick" MessageAbout="Tjollahoppsan" MessageFrom="From Contact Bertil"  />
+            <Controls:MessageControl x:Name="mess5" MouseDoubleClick="mess5_MouseDoubleClick" MessageAbout="Tjabba" />
+            <Controls:MessageControl x:Name="mess6" MouseDoubleClick="mess6_MouseDoubleClick" />
+            <Controls:MessageControl x:Name="mess7" MouseDoubleClick="mess7_MouseDoubleClick" />
+        </StackPanel>
+
+        <Grid Grid.Column="1" Margin="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0">
+                <TextBlock x:Name="txSubject" FontFamily="Bahnschrift Light" Margin="15,0,0,0" Text="Subject" FontSize="20" FontWeight="Bold"/>
+            </StackPanel>
+            <Grid Grid.Row="1" Margin="0,15,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock x:Name="txName" Margin="15,0,0,0" FontFamily="Bahnschrift Light" Text="Contact Name (Username@domain.com)" />
+                    <TextBlock Text="To Mattias Karlsson" Margin="15,0,0,0" FontFamily="Bahnschrift Light" FontSize="10"/>
+                </StackPanel>
+
+            </Grid>
+            <TextBlock Margin="15,30,15,0" Grid.Row="2" Text="" FontFamily="Bahnschrift Light" TextWrapping="Wrap" x:Name="body"/>
+
+
+        </Grid>
+    </Grid>
+</UserControl>

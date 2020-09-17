@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Adder.jpg" />
+    <None Remove="Views\Darth.jpeg" />
+    <None Remove="Views\luke.png" />
+    <None Remove="Views\Matte.png" />
+    <None Remove="Views\Vasa.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Adder.jpg" />
+    <Resource Include="Views\Darth.jpeg" />
+    <Resource Include="Views\luke.png" />
+    <Resource Include="Views\Matte.png" />
+    <Resource Include="Views\Vasa.png" />
+  </ItemGroup>
+
+</Project>
