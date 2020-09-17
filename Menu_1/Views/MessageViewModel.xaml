@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Menu_1.Views"
              mc:Ignorable="d" 
-             
              d:DesignHeight="450" d:DesignWidth="800">
+    
     <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="300"/>
@@ -15,13 +15,26 @@
 
         <StackPanel Grid.Column="0">
             <Label Content="Messages" FontSize="24" FontFamily="Bahnschrift Light" Margin="20,30,10,90" FontWeight="Normal"/>
-            <Controls:MessageControl x:Name="mess1" MouseDoubleClick="mess1_MouseDoubleClick" MessageFrom="From Contact Gustav Vasa" MessageAbout="Tjenare"/>
-            <Controls:MessageControl x:Name="mess2" MouseDoubleClick="mess2_MouseDoubleClick" MessageFrom="From Contact Mattias" MessageAbout="Tjena" />
-            <Controls:MessageControl x:Name="mess3" MouseDoubleClick="mess3_MouseDoubleClick" MessageAbout="Hej" MessageFrom="From Contact Sven" />
-            <Controls:MessageControl x:Name="mess4" MouseDoubleClick="mess4_MouseDoubleClick" MessageAbout="Tjollahoppsan" MessageFrom="From Contact Bertil"  />
-            <Controls:MessageControl x:Name="mess5" MouseDoubleClick="mess5_MouseDoubleClick" MessageAbout="Tjabba" />
-            <Controls:MessageControl x:Name="mess6" MouseDoubleClick="mess6_MouseDoubleClick" />
-            <Controls:MessageControl x:Name="mess7" MouseDoubleClick="mess7_MouseDoubleClick" />
+            
+            <Button x:Name="mess1" Click="mess1_Click" Background="Transparent" BorderThickness="0">
+                <Controls:MessageControl   MessageFrom="From Contact Gustav Vasa" MessageAbout="Tjenare"/>
+            </Button>
+
+            <Button x:Name="mess2" Click="mess2_Click" Background="Transparent" BorderThickness="0">
+                <Controls:MessageControl   MessageFrom="From Contact Mattias" MessageAbout="Tjena" />
+            </Button>
+
+            <Button x:Name="mess3" Click="mess3_Click" Background="Transparent" BorderThickness="0">
+                <Controls:MessageControl   MessageAbout="Hej" MessageFrom="From Contact Sven" />
+            </Button>
+
+            <Button x:Name="mess4" Click="mess4_Click" Background="Transparent" BorderThickness="0">
+                <Controls:MessageControl  MessageAbout="Tjollahoppsan" MessageFrom="From Contact Bertil"  />
+            </Button>
+
+            <Button x:Name="mess5" Click="mess5_Click" Background="Transparent" BorderThickness="0">
+                <Controls:MessageControl  MessageAbout="Tjabba" MessageFrom="Kjelle" />
+            </Button>
         </StackPanel>
 
         <Grid Grid.Column="1" Margin="30">
@@ -34,6 +47,7 @@
             <StackPanel Grid.Row="0">
                 <TextBlock x:Name="txSubject" FontFamily="Bahnschrift Light" Margin="15,0,0,0" Text="Subject" FontSize="20" FontWeight="Bold"/>
             </StackPanel>
+            
             <Grid Grid.Row="1" Margin="0,15,0,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -46,9 +60,9 @@
                 </StackPanel>
 
             </Grid>
+            
             <TextBlock Margin="15,30,15,0" Grid.Row="2" Text="" FontFamily="Bahnschrift Light" TextWrapping="Wrap" x:Name="body"/>
-
-
+            
         </Grid>
     </Grid>
 </UserControl>
