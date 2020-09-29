@@ -62,7 +62,6 @@
             </Grid>
             
             <TextBlock Margin="15,30,15,0" Grid.Row="2" Text="" FontFamily="Bahnschrift Light" TextWrapping="Wrap" x:Name="body"/>
-            
         </Grid>
     </Grid>
 </UserControl>

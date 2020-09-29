@@ -21,18 +21,6 @@
                 <TextBlock x:Name="contactName" Text="Mattias Erik Karlsson" Margin=" 20,0,0,0" FontFamily="Bahnschrift Light" FontSize="16"/>
                 <TextBlock x:Name="contactTitle" Text=".Net Web Developer Student" Margin="20,2,10,10" FontFamily="Bahnschrift Light" FontSize="10" FontStyle="Italic" Foreground="#FF0C0909"/>
             </StackPanel>
-
-
-
-
-
-
-
-
-
-
-
-
         </Grid>
     </Button>
 

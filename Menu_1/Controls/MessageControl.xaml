@@ -22,9 +22,7 @@
             <StackPanel Grid.ColumnSpan="2" Margin="243,0,0,0">
                 <TextBlock x:Name="messageDate" Text="20-09-13" FontSize="10" Margin="0,40,0,0" Height="11" FontWeight="Bold" Width="52" FontFamily="Bahnschrift Light"/>
                 <TextBlock x:Name="messageTime" Text="19:46" FontSize="10" Margin="0,0,0,0" FontWeight="Bold" Width="52" FontFamily="Bahnschrift Light"/>
-
             </StackPanel>
         </Grid>
-
     </Button>
 </UserControl>
